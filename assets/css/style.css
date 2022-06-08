@@ -133,13 +133,22 @@ h6,
   z-index: 2;
 }
 
+#gifs-rows img {
+  cursor: pointer;
+}
+#gifs-rows .gif-file {
+  display: none;
+}
+
+/* .item:hover {
+  transform: scale(1.5);
+  transition: transform 2s ease-in-out;
+  z-index: 5;
+} */
+
 /* .item .item-wrap:hover img {
   transform: scale(1.05);
 } */
-
-.art {
-  visibility: invisible;
-}
 
 .item .item-wrap:hover:after {
   opacity: 1;

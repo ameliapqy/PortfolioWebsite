@@ -1,52 +1,64 @@
 /**
-* Template Name: MyPortfolio - v4.3.0
-* Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-(function() {
-  "use strict";
+ * Template Name: MyPortfolio - v4.3.0
+ * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+ * Author: BootstrapMade.com
+ * License: https://bootstrapmade.com/license/
+ */
+
+// $('img', '#gifs-rows').hover(function () {
+//   $('.preset-file').toggle();
+//   $('.gif-file').toggle();
+// });
+
+(function () {
+  'use strict';
 
   /**
    * Easy selector helper function
    */
   const select = (el, all = false) => {
-    el = el.trim()
+    el = el.trim();
     if (all) {
-      return [...document.querySelectorAll(el)]
+      return [...document.querySelectorAll(el)];
     } else {
-      return document.querySelector(el)
+      return document.querySelector(el);
     }
-  }
+  };
 
   /**
    * Easy event listener function
    */
   const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all)
+    let selectEl = select(el, all);
     if (selectEl) {
       if (all) {
-        selectEl.forEach(e => e.addEventListener(type, listener))
+        selectEl.forEach((e) => e.addEventListener(type, listener));
       } else {
-        selectEl.addEventListener(type, listener)
+        selectEl.addEventListener(type, listener);
       }
     }
-  }
+  };
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
+
   const onscroll = (el, listener) => {
-    el.addEventListener('scroll', listener)
-  }
+    el.addEventListener('scroll', listener);
+  };
+
+
+  const toggleDisplay = (x) => {
+    x.display.toggle();
+  };
 
   /**
    * burgerMenu
    */
-  const burgerMenu = select('.burger')
-  on('click', '.burger', function(e) {
+  const burgerMenu = select('.burger');
+  on('click', '.burger', function (e) {
     burgerMenu.classList.toggle('active');
-  })
+  });
 
   /**
    * Porfolio isotope and filter
@@ -60,22 +72,26 @@
 
       let portfolioFilters = select('#filters a', true);
 
-      on('click', '#filters a', function(e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('active');
-        });
-        this.classList.add('active');
+      on(
+        'click',
+        '#filters a',
+        function (e) {
+          e.preventDefault();
+          portfolioFilters.forEach(function (el) {
+            el.classList.remove('active');
+          });
+          this.classList.add('active');
 
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-        portfolioIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
-        });
-      }, true);
+          portfolioIsotope.arrange({
+            filter: this.getAttribute('data-filter'),
+          });
+          portfolioIsotope.on('arrangeComplete', function () {
+            AOS.refresh();
+          });
+        },
+        true
+      );
     }
-
   });
 
   /**
@@ -86,14 +102,14 @@
     loop: true,
     autoplay: {
       delay: 5000,
-      disableOnInteraction: false
+      disableOnInteraction: false,
     },
     slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
-      clickable: true
-    }
+      clickable: true,
+    },
   });
 
   /**
@@ -104,8 +120,7 @@
       duration: 1000,
       easing: 'ease-in-out',
       once: true,
-      mirror: false
-    })
+      mirror: false,
+    });
   });
-
-})()
+})();
