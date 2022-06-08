@@ -78,13 +78,9 @@ h6,
   border: black solid 1px;
 }
 
-/* .item img {
-  display: none;
+.item-wrap a {
+  cursor: alias;
 }
-
-.item img:hover {
-  display: block;
-} */
 
 .item .item-wrap:after {
   z-index: 2;
@@ -104,6 +100,10 @@ h6,
   transition: 0.3s transform ease;
   transform: scale(1);
 }
+
+/* .item .item-wrap a {
+  cursor: crosshair !important;
+} */
 
 .item .item-wrap > .work-info {
   position: absolute;
@@ -145,6 +145,10 @@ h6,
   transition: transform 2s ease-in-out;
   z-index: 5;
 } */
+
+.zoom {
+  cursor: zoom-in;
+}
 
 /* .item .item-wrap:hover img {
   transform: scale(1.05);
