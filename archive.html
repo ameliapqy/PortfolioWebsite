@@ -33,45 +33,19 @@
 
     <nav class="navbar navbar-light custom-navbar">
       <div class="container">
-        <h2> <a id="title" href="#aboutme"> Amelia Qingyuan Peng </a> </h2>
+        <h2> Hello! I'm <a id="title" href="#aboutme"> Amelia Qingyuan Peng </a> </h2>
 
         <div class="col-sm-6 social text-md-end">
-          <a href="https://vimeo.com/user105075694" target=" _blank"><span class="bi bi-vimeo"></span></i></a>
           <a href="https://github.com/ameliapqy" target="_blank"><span class="bi bi-github"></span></a>
+          <a href="https://vimeo.com/user105075694" target=" _blank"><span class="bi bi-vimeo"></span></i></a>
           <a href="https://www.linkedin.com/in/amelia-peng-56549b128/" target="_blank"><span class="bi bi-linkedin"></span></a>
-          <a href="mailto:pqy@seas.upenn.edu" target="_blank"><span class="bi bi-envelope-fill"></span></a>
         </div>
       </div>
     </nav>
 
     <main id="main">
-
-      <!-- About Section -->
-
-      <section class="section pb-2 pt-5">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6" data-aos="fade-up">
-
-              <!-- <h2 id="aboutme">About Me</h2> -->
-              <p class="mb-0">
-                Hello! I’m Amelia and I'm doing my masters in <a href="http://cg.cis.upenn.edu/cggt.html" target="_blank">Computer Graphics and Game Technology</a> after completing a BSE in <a href="http://cg.cis.upenn.edu/dmd.html" target="_blank">Digital Media Design</a> from the University of Pennsylvania.
-              </p>
-              <br>
-              <!-- <p><img src="assets/img/.jpg" alt="" class="img-fluid"></p> -->
-              <p>I’m passionate about both computer science and art, with skills and experiences in C++, Python, OpenGL, 3D modeling, painting, photography, teaching myself Houdini, and graphic design. From technical director to software engineering, I’m interested in exploring all aspects of the graphics and CS field, and I'd love to learn as much as I can.</p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-      <!-- End About Section-->
-
       <!-- ======= Works Section ======= -->
-      <section class="section site-portfolio pt-2">
+      <section class="section site-portfolio">
         <div class="container">
           <div class="row mb-5 align-items-center">
             <div class="text-start text-lg-end" data-aos="fade-up" data-aos-delay="100">
@@ -80,8 +54,7 @@
                 <a href="#" data-filter=".gl">WebGL/GLSL</a>
                 <a href="#" data-filter=".game">GameDev</a>
                 <a href="#" data-filter=".modeling">Modeling</a>
-                <!-- <a href="#" data-filter=".other">Other</a> -->
-
+                <a href="#" data-filter=".other">Other</a>
                 <!-- <a href="#" data-filter=".coding">Coding</a> -->
                 <!-- <a href="#" data-filter=".modeling">3D Modeling</a> -->
                 <!-- <a href="#" data-filter=".art">Art</a> -->
@@ -95,22 +68,13 @@
 
             <div class="item coding modeling col-sm-6 col-md-4 col-lg-4 mb-4">
               <a href="https://github.com/ameliapqy/proceduralFlower" class="item-wrap fancybox" target="_blank">
-                <!-- <a class="item-wrap fancybox" target="_blank"> -->
                 <div class="work-info">
-                  <h3>Procedural Flower Demo</h3>
+                  <h3>Procedural Flower Animation</h3>
                   <span>Houdini</span>
                 </div>
-                <!-- <iframe class="img-fluid" title="vimeo-player" src="https://player.vimeo.com/video/737338184?h=1fd5495a57" width="640" height="360" frameborder="0" allowfullscreen></iframe> -->
-                <img id="flower" class=" img-fluid" src="assets/img/Coding/flower.gif" />
+                <img class=" img-fluid" src="assets/img/Coding/flower.gif" />
               </a>
             </div>
-            <!-- 
-            <div>
-              <div>Click on image below to go to link:</div>
-              <a href="https://www.google.com" title="ACU Project link">
-                <div class="img-acu"></div>
-              </a>
-            </div> -->
 
             <div class="item modeling col-sm-6 col-md-4 col-lg-4 mb-4">
               <a class="item-wrap fancybox" target="_blank">
@@ -162,13 +126,41 @@
               </a>
             </div>
 
-            <!-- <div class="item game gl coding col-sm-6 col-md-4 col-lg-4 mb-4">
+            <div class="item gl coding col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a href="https://www.shadertoy.com/view/wssfRX" class="item-wrap fancybox" target="_blank">
+                <div class="work-info">
+                  <h3>Intersteller</h3>
+                  <span>Shadertoy</span>
+                </div>
+                <img class="img-fluid" src="assets/img/Coding/intersteller.gif" />
+              </a>
+            </div>
+
+            <div class="item other coding col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>Yayoi's Pumpkin</h3>
+                  <span>Monte Carlo Path Tracer, pbrt, C++</span>
+                </div>
+                <img class="img-fluid" src="assets/img/Coding/pumpkin.png" />
+              </a>
+            </div>
+            <div class="item other coding col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a href="https://github.com/ameliapqy/TwitterNext" class="item-wrap fancybox" target="_blank">
+                <div class="work-info">
+                  <h3>TwitterNext</h3>
+                  <span>Python, Django</span>
+                </div>
+                <img class="img-fluid" src="assets/img/coding/twitterNext.gif" />
+              </a>
+            </div>
+            <div class="item game gl coding col-sm-6 col-md-4 col-lg-4 mb-4">
               <a href="https://vimeo.com/378304192" class="item-wrap fancybox" target="_blank">
                 <div class="work-info">
                   <h3>Mini Minecraft - Day and Night Cycle</h3>
                   <span>C++, GLSL, Qt</span>
                 </div>
-                <img class="img-fluid" src="assets/img/coding/daynight.gif" />
+                <img class="img-fluid" src="assets/img/coding/day&nightGif.gif" />
               </a>
             </div>
             <div class="item game gl coding col-sm-6 col-md-4 col-lg-4 mb-4">
@@ -177,9 +169,18 @@
                   <h3>Mini Minecraft - Shaders</h3>
                   <span>C++, GLSL, Qt</span>
                 </div>
-                <img class="img-fluid" src="assets/img/coding/shadersmc.gif" />
+                <img class="img-fluid" src="assets/img/coding/shadersGif.gif" />
               </a>
-            </div> -->
+            </div>
+            <div class="item game gl coding col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>Mini Minecraft - Texturing</h3>
+                  <span>C++, GLSL, Qt</span>
+                </div>
+                <img class="img-fluid" src="assets/img/coding/texturing.gif" />
+              </a>
+            </div>
 
             <div class="item modeling col-sm-6 col-md-4 col-lg-4 mb-4">
               <a class="item-wrap fancybox">
@@ -194,7 +195,7 @@
             <div class="item modeling col-sm-6 col-md-4 col-lg-4 mb-4">
               <a class="item-wrap fancybox">
                 <div class="work-info">
-                  <h3>Hogwarts-The Great Hall Still</h3>
+                  <h3>Hogwarts-The Great Hall 2</h3>
                   <span>Maya</span>
                 </div>
                 <img class="img-fluid" src="assets/img/modeling/hog2.jpg" />
@@ -228,6 +229,63 @@
                   <span>ZBrush</span>
                 </div>
                 <img class="img-fluid" src="assets/img/modeling/selfportrait.png" />
+              </a>
+            </div>
+
+            <div class="item other coding col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a href="https://github.com/ameliapqy/iDonate" class="item-wrap fancybox" target="_blank">
+                <div class="work-info">
+                  <h3>iDonate</h3>
+                  <span>Swift, Firebase</span>
+                </div>
+                <img class="img-fluid" src="assets/img/coding/iDonate.jpg" />
+              </a>
+            </div>
+
+            <div class="item other coding col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>The Matrix</h3>
+                  <span>Monte Carlo Path Tracer, pbrt, C++</span>
+                </div>
+                <img class="img-fluid" src="assets/img/coding/matrix.png" />
+              </a>
+            </div>
+            <div class="item gl coding col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>Geometric Mesh Editor</h3>
+                  <span>C++, GLSL, Qt</span>
+                </div>
+                <img class="img-fluid" src="assets/img/coding/miniMaya.gif" />
+              </a>
+            </div>
+            <div class="item gl coding col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>Shaders</h3>
+                  <span>C++, GLSL, Qt</span>
+                </div>
+                <img class="img-fluid" src="assets/img/coding/shaders.gif" />
+              </a>
+            </div>
+            <div class="item gl coding col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>SceneGraph</h3>
+                  <span>C++, GLSL, Qt</span>
+                </div>
+                <img class="img-fluid" src="assets/img/coding/sceneGraph.gif" />
+              </a>
+            </div>
+
+            <div class="item game coding col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>Reversible 2048</h3>
+                  <span>Java</span>
+                </div>
+                <img class="img-fluid" src="assets/img/coding/2048Demo.gif" />
               </a>
             </div>
 
@@ -286,6 +344,26 @@
 
       <!-- About Section -->
 
+      <section class="section pb-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6" data-aos="fade-up">
+
+              <h2 id="aboutme">About Me</h2>
+              <p class="mb-0">
+                Hello! I’m Amelia and I'm doing my masters in <a href="http://cg.cis.upenn.edu/cggt.html" target="_blank">Computer Graphics and Game Technology</a> after completing a BSE in <a href="http://cg.cis.upenn.edu/dmd.html" target="_blank">Digital Media Design</a> from the University of Pennsylvania.
+              </p>
+              <br>
+              <!-- <p><img src="assets/img/.jpg" alt="" class="img-fluid"></p> -->
+              <p>I’m passionate about both computer science and fine art, with skills and experiences in C++, Python, OpenGL, 3D modeling, painting, photography, teaching myself Houdini, and graphic design. From technical director to software engineering, I’m interested in exploring all aspects of the graphics and CS field, and I'd love to learn as much as I can.</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
       <!-- End About Section-->
 
     </main>

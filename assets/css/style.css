@@ -40,6 +40,7 @@ h6,
 .filters a:focus,
 .filters a:active {
   text-decoration: none;
+  color: rgb(175, 74, 74);
 }
 
 .filters a:hover:before {
@@ -446,4 +447,16 @@ a:hover {
 
 .social a:hover {
   color: #000;
+}
+
+.img-acu {
+  float: left;
+  width: 250px;
+  height: 132px;
+  background: transparent url('https://i.imgur.com/7r91PY3.jpeg') center top no-repeat;
+  background-size: 125%;
+}
+
+.img-acu:hover {
+  background-image: url('https://media.giphy.com/media/QMkPpxPDYY0fu/giphy.gif');
 }
